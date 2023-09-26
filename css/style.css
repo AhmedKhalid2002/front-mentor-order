@@ -1,0 +1,114 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --transparent-Bright-blue: hsla(245, 75%, 52%,0.5);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --transparent-Pale-blue: hsla(225, 100%, 94%, 0.3);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background:url(../images/pattern-background-desktop.svg) var(--Pale-blue);
+    background-repeat:no-repeat ;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+.card{
+    border-radius:25px ;
+    width: 450px;
+    background-color: var(--Very-pale-blue);
+}
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.card-body{
+    padding: 30px;
+}
+.card-body .text{
+    text-align: center;
+}
+.card-body .text p{
+    color: var(--Desaturated-blue);
+    margin: 20px ;
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--transparent-Pale-blue);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.song{
+    display: flex;
+    align-items: center;
+    width: 50%;    
+}
+.song img{
+    width: 30%;
+    object-fit: contain;
+}
+.song .annual{
+    margin-left: 20px;
+    width: 100%;
+}
+.song .annual h3:first-child{
+    font-size: 16px;
+}
+.song .annual h3:last-child{
+    color: var(--Desaturated-blue);
+    font-size: 16px;
+    margin-top: 10px;
+}
+.plan a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+.plan a:hover{
+    color: var(--transparent-Bright-blue);
+    text-decoration: none;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.payment button{
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    cursor: pointer;
+    transition: all 1s;
+    font-weight: 700;
+}
+.payment button:hover{
+    background-color: var(--transparent-Bright-blue);
+    box-shadow: 0 9px 10px -3px var(--transparent-Bright-blue);
+    
+}
+.payment a{
+    text-decoration: none;
+    text-align: center;
+    margin-top:20px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    transition: color .5s;
+}
+.payment a:hover{
+    color: var(--Dark-blue);
+}
